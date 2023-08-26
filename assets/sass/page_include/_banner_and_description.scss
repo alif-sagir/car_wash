@@ -1,0 +1,309 @@
+
+// banner_area start
+.banner_section {
+    border: $border;
+    background-image: url("../images/bg_img/bg_img_2_left.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: right;
+    background-position-y: top;
+
+    // banner_area full start
+    .banner_area_full {
+        border: $border;
+        background-color: rgba(0, 0, 0, 0.6);
+
+        .banner_area_content {
+            border: $border;
+            text-align: end;
+            color: $white;
+            padding: 170px 0px;
+
+            @include xs {
+                padding: 80px 0px;
+            }
+
+            @include sm() {
+                padding: 150px 0px;
+            }
+
+            @include md() {
+                padding: 150px 0px;
+            }
+
+            h1 {
+                border: $border;
+                font-family: $Poppins_Bold;
+                font-size: 60px;
+                text-transform: capitalize;
+                line-height: 60px;
+                letter-spacing: 4px;
+                color: $orange;
+
+                @include xs() {
+                    font-size: 35px;
+                    line-height: 45px;
+                    letter-spacing: 3px;
+                    color: $white;
+                }
+
+                @include sm() {
+                    color: $white;
+                    font-size: 50px;
+                }
+
+                @include md() {
+                    font-size: 48px;
+                    letter-spacing: 3px;
+                }
+
+                .all_helal {
+                    color: $white;
+
+                    @include xs {
+                        display: block;
+                        color: $orange;
+                    }
+
+                    @include sm() {
+                        display: block;
+                        color: $orange;
+                    }
+                }
+            }
+
+            .title_1 {
+                border: $border;
+                font-family: $Poppins_Light;
+                font-size: 22px;
+                font-weight: bold;
+                text-transform: inherit;
+                line-height: 22px;
+                margin: 40px 0px;
+                letter-spacing: 4px;
+                color: $orange;
+
+                @include xs() {
+                    font-size: 20px;
+                    letter-spacing: 1px;
+                    line-height: unset;
+                }
+
+                @include sm() {
+                    font-size: 20px;
+                    letter-spacing: 2px;
+                }
+
+                @include md() {
+                    letter-spacing: 2px;
+                    font-size: 20px;
+                }
+            }
+
+            .title_2 {
+                border: $border;
+                font-size: 15px;
+                color: $white;
+                letter-spacing: 3px;
+
+                @include xs() {
+                    letter-spacing: 0px;
+                }
+
+                span {
+                    
+                }
+            }
+
+            .click_area {
+                border: $border;
+                font-family: $Poppins_Light;
+                font-size: 12px;
+                letter-spacing: 2px;
+                font-weight: 600;
+                text-transform: capitalize;
+                line-height: 14px;
+                color: $orange;
+                background-color: rgba(0, 0, 0, 0.6);
+                border: 1px solid transparent;
+                border-left-color: $orange;
+                padding: 15px 30px;
+                transition-duration: 0.4s;
+                margin-top: 40px;
+
+                &:hover {
+                    color: $orange;
+                    background-color: transparent;
+                    border-color: $orange;
+                }
+            }
+        }
+    }
+    // banner_area full end
+}
+
+// banner_area end
+
+.feature_area_full {
+    background-color: $black;
+    padding-top: 95px;
+    .feature_area {
+        .feature_area_content {
+            .feature_area_title {
+                border: $border;
+                margin-bottom: 45px;
+                text-align: center;
+                h2 {
+                    color: $orange;
+                    text-transform: capitalize;
+                    font-family: $Poppins_Light;
+                    font-size: 25px;
+                    letter-spacing: 4px;
+
+                    @include xs() {
+                        font-size: 18px;
+                    }
+
+                    @include sm() {
+                        font-size: 20px;
+                    }
+                }
+            }
+
+            .all_content {
+                .feature_area_all {
+                    border: $border;
+
+                    @include xs() {
+                        // margin-bottom: 50px;
+                    }
+
+                    // feature_content
+                    .feature_content_area {
+                        border: $border;
+                        display: flex;
+                        background-color: rgba(0, 0, 0, 0.8);
+                        align-items: center;
+                        height: 100%;
+
+                        .feature_content_icon {
+                            align-items: center;
+                            display: flex;
+                            justify-content: center;
+                            margin-right: 20px;
+
+                            i {
+                                border: $border;
+                                color: $white;
+                                padding: 20px;
+                                color: $orange;
+                                font-size: 50px;
+                                border-right: 1px solid $border_color;
+
+                                @include xs() {
+                                    font-size: 35px;
+                                    padding: 20px 20px 20px 0px;
+                                }
+
+                                @include md() {
+                                    font-size: 35px;
+                                }
+                            }
+                        }
+
+                        .feature_content_title_and_details {
+                            border: $border;
+                            padding: 10px;
+                            align-items: center;
+                            display: grid;
+
+                            .feature_content_title {
+                                border: $border;
+                                margin-bottom: 20px;
+
+                                h3 {
+                                    border: $border;
+                                    color: $orange;
+                                    font-family: $Poppins_Light;
+                                    font-size: 18px;
+                                    letter-spacing: 4px;
+                                }
+                            }
+
+                            .feature_content_details {
+                                align-items: center;
+                                display: flex;
+
+                                p {
+                                    font-family: $Poppins_Light;
+                                    font-size: 16px;
+                                    line-height: 30px;
+                                    letter-spacing: 3px;
+                                    color: $off_white;
+
+                                    @include xs() {
+                                        line-height: 27px;
+                                        letter-spacing: 2px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    // feature_image
+                    .feature_image_all {
+                        border: $border;
+                        justify-content: center;
+                        margin: auto;
+                        align-items: center;
+                        display: flex;
+                        height: 100%;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        width: 500px;
+                        height: 300px;
+                        margin-top: 50px;
+                        margin-bottom: 50px;
+
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        background-position: center;
+
+                        @include xs() {
+                            width: 250px;
+                            height: 230px;
+                        }
+
+                        @include sm() {
+                            width: 430px;
+                            height: 290px;
+                        }
+
+                        @include md() {
+                            width: 300px;
+                            height: 230px;
+                        }
+
+                        @include lg() {
+                            width: 400px;
+                            height: 280px;
+                        }
+                    }
+
+                }
+
+                .feature_area_1 {
+                }
+
+                .feature_area_2 {
+                }
+
+                .feature_area_3 {
+                }
+
+                .feature_area_4 {
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,595 @@
+// footer_area start
+.footer_area {
+    border: $border;
+    background-image: url("../images/footer_area_img/footer_bg_1.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: left;
+    background-position-y: center;
+    background-attachment: fixed;
+
+    // footer_area_1 start
+    .footer_area_1 {
+        border: $border;
+        padding: 95px 0px;
+        background-color: rgba(0, 0, 0, 0.8);
+
+        .footer_area_content {
+            border: $border;
+        }
+
+        // contact area start
+        .contact {
+            border: $border;
+            @include xs() {
+                margin-bottom: 70px;
+                text-align: center;
+            }
+            @include sm() {
+                margin-bottom: 70px;
+                text-align: center;
+            }
+            @include md() {
+                margin-bottom: 70px;
+            }
+            @include lg() {
+                margin-bottom: 70px;
+            }
+            // company_name and title
+            .footer_area_company_logo {
+                margin-bottom: 35px;
+                // background-image: url("../images/logo/logo_1.png");
+
+                width: 75px;
+                height: 50px;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            // company_address
+            .company_address {
+                margin-bottom: 35px;
+                @include xs() {
+                    text-align: center;
+                }
+                @include sm() {
+                    text-align: center;
+                }
+                a {
+                    border: $border;
+                    color: $white;
+                    font-family: "Poppins-ExtraLight";
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    line-height: 26px;
+                    word-spacing: 5px;
+                    letter-spacing: 3px;
+                    transition-duration: 0.6s;
+
+                    &:hover {
+                        color: $new_color;
+                    }
+                }
+            }
+
+            // phone_number
+            .phone_number {
+                border: $border;
+                // margin: 20px 0px;
+                line-height: 26px;
+                @include xs() {
+                    justify-content: center;
+                    display: flex;
+                }
+                @include sm() {
+                    justify-content: center;
+                    display: flex;
+                }
+                .all_number {
+                    border: $border;
+                    display: flex;
+
+                    .icon {
+                        i {
+                            border: $border;
+                            color: $orange;
+                            font-size: 16px;
+                            line-height: 16px;
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .number {
+                        .number_item {
+                            margin-bottom: 10px;
+
+                            a {
+                                border: $border;
+                                color: $white;
+                                font-family: "Poppins-ExtraLight";
+                                text-transform: capitalize;
+                                font-size: 16px;
+                                line-height: 16px;
+                                letter-spacing: 3px;
+                                transition-duration: 0.6s;
+
+                                &:hover {
+                                    color: $new_color;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            // company_email
+            .company_email {
+                border: $border;
+                margin-bottom: 10px;
+                display: flex;
+                @include xs() {
+                    justify-content: center;
+                }
+                @include sm() {
+                    justify-content: center;
+                }
+                .email_icon {
+                    i {
+                        border: $border;
+                        color: $orange;
+                        font-size: 16px;
+                        line-height: 16px;
+                        margin-right: 10px;
+                    }
+                }
+
+                .email {
+                    a {
+                        border: $border;
+                        color: $white;
+                        font-family: "Poppins-ExtraLight";
+                        text-transform: lowercase;
+                        font-size: 14px;
+                        line-height: 14px;
+                        letter-spacing: 0px;
+                        transition-duration: 0.6s;
+                        @include xl() {
+                            font-size: 12px;
+                        }
+                        &:hover {
+                            color: $new_color;
+                        }
+                    }
+                }
+            }
+
+            // company_website
+            .company_website {
+                border: $border;
+                // margin: 20px 0px;
+                display: flex;
+                @include xs() {
+                    justify-content: center;
+                }
+                @include sm() {
+                    justify-content: center;
+                }
+                .web_icon {
+                    i {
+                        border: $border;
+                        color: $orange;
+                        font-size: 16px;
+                        line-height: 16px;
+                        margin-right: 10px;
+                    }
+                }
+
+                .website_link {
+                    a {
+                        border: $border;
+                        color: $white;
+                        font-family: "Poppins-ExtraLight";
+                        text-transform: lowercase;
+                        font-size: 14px;
+                        line-height: 14px;
+                        letter-spacing: 0px;
+                        transition-duration: 0.6s;
+
+                        &:hover {
+                            color: $new_color;
+                        }
+                    }
+                }
+            }
+
+            // social_midea_area
+            .social_midea {
+                border: $border;
+                margin-top: 35px;
+                margin-bottom: 0px;
+
+                @include xs() {
+                    justify-content: center;
+                    display: flex;
+                }
+                @include sm() {
+                    justify-content: center;
+                    display: flex;
+                }
+                .facebook_icon {
+                    i {
+                        color: #0f92f3;
+                    }
+                }
+
+                .twitter_icon {
+                    i {
+                        color: #1da1f2;
+                    }
+                }
+
+                .youtube_icon {
+                    i {
+                        color: #ff0000;
+                    }
+                }
+
+                .instagram_icon {
+                    i {
+                        color: #ac3da1;
+                    }
+                }
+
+                .icons {
+                    i {
+                        border: $border;
+                        font-size: 20px;
+                        width: 40px;
+                        height: 40px;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        transition-duration: 0.4s;
+
+                        &:hover {
+                            background: #191919;
+                        }
+                    }
+                }
+            }
+        }
+
+        // useful_link_area start
+        .useful_link_area {
+            border: $border;
+            @include xs() {
+                margin-bottom: 70px;
+            }
+            .useful_link_title {
+                margin-bottom: 25px;
+                margin-left: 25px;
+                @include xs() {
+                    margin-left: 0px;
+                    text-align: center;
+                }
+                @include sm() {
+                    margin-left: 0px;
+                    text-align: center;
+                }
+                h2 {
+                    border: $border;
+                    color: $orange;
+                    font-family: "Poppins-ExtraLight";
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    word-spacing: 5px;
+                    letter-spacing: 3px;
+                }
+            }
+
+            .useful_link_content {
+                @include xs() {
+                    text-align: center;
+                }
+                @include sm() {
+                    text-align: center;
+                    margin-bottom: 70px;
+                }
+                .useful_link {
+                    border-bottom: 1px solid $footer_border;
+                    margin-bottom: 15px;
+
+                    a {
+                        border: $border;
+                        color: $white;
+                        font-family: "Poppins-ExtraLight";
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        line-height: 16px;
+                        word-spacing: 5px;
+                        letter-spacing: 3px;
+                        padding: 10px;
+                        margin-left: 15px;
+                        margin-bottom: 10px;
+                        transition-duration: 0.4s;
+
+                        &:hover {
+                            color: $new_color;
+                        }
+                    }
+                }
+            }
+        }
+
+        // services area start
+        .services_area {
+            border: $border;
+            @include xs() {
+                margin-bottom: 70px;
+                text-align: center;
+            }
+            @include sm() {
+                margin-bottom: 70px;
+                text-align: center;
+            }
+            .services_titles {
+                h2 {
+                    border: $border;
+                    color: $orange;
+                    font-family: "Poppins-ExtraLight";
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    word-spacing: 5px;
+                    letter-spacing: 3px;
+                    margin-left: 25px;
+                    margin-bottom: 25px;
+                    @include xs() {
+                        margin-left: 0px;
+                    }
+                    @include sm() {
+                        margin-left: 0px;
+                    }
+                }
+            }
+
+            .services_content {
+                .services_item {
+                    border-bottom: 1px solid #3d3b3b;
+                    margin-bottom: 15px;
+
+                    a {
+                        border: $border;
+                        color: $white;
+                        font-family: "Poppins-ExtraLight";
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        line-height: 16px;
+                        word-spacing: 5px;
+                        letter-spacing: 3px;
+                        padding: 10px;
+                        margin-left: 15px;
+                        margin-bottom: 10px;
+                        transition-duration: 0.4s;
+
+                        &:hover {
+                            color: $new_color;
+                        }
+                    }
+                }
+            }
+        }
+
+        // opening_houres area start
+        .opening_houres_area {
+            // opening_houres_title
+            .opening_houres_title {
+                margin-bottom: 25px;
+                margin-left: 25px;
+                @include xs() {
+                    margin-left: 0px;
+                    text-align: center;
+                }
+                @include sm() {
+                    margin-left: 0px;
+                    text-align: center;
+                }
+                h2 {
+                    border: $border;
+                    color: $orange;
+                    font-family: "Poppins-ExtraLight";
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    word-spacing: 5px;
+                    letter-spacing: 3px;
+                }
+            }
+
+            // opening_houres_content
+            .opening_houres_content {
+                border: $border;
+
+                .opening_date_time {
+                    border: $border;
+                    // display: flex;
+                    // justify-content: space-between;
+                    border-bottom: 1px solid #3d3b3b;
+                    margin-bottom: 15px;
+
+                    .date_and_time {
+                        display: flex;
+                        justify-content: space-between;
+                        margin-left: 15px;
+                        margin-bottom: 12px;
+                        padding: 10px 0px 10px 10px;
+                        @include xs() {
+                            margin-left: 0px;
+                            padding-left: 0px;
+                        }
+                        @include sm() {
+                            margin-left: 0px;
+                            padding-left: 0px;
+                        }
+                        @include xl() {
+                            margin-left: 0px;
+                            padding-left: 0px;
+                        }
+                        .day_name {
+                            p {
+                                border: $border;
+                                color: $white;
+                                font-family: "Poppins-ExtraLight";
+                                text-transform: capitalize;
+                                font-size: 14px;
+                                line-height: 14px;
+                                word-spacing: 5px;
+                                letter-spacing: 3px;
+                            }
+                        }
+
+                        .time {
+                            p {
+                                border: $border;
+                                color: $white;
+                                font-family: "Poppins-ExtraLight";
+                                text-transform: capitalize;
+                                font-size: 14px;
+                                line-height: 14px;
+                                word-spacing: 5px;
+                                letter-spacing: 3px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // footer_area_bottom start
+    .footer_area_bottom {
+        border: $border;
+        background-color: rgba(0, 0, 0, 1);
+        padding: 35px 0px;
+
+        .footer_area_bottom_content {
+            border: $border;
+
+            // footer_area_bottom_left
+            .footer_area_bottom_left {
+                border: $border;
+                align-items: center;
+                display: flex;
+                height: 100%;
+                @include xs() {
+                    justify-content: center;
+                }
+                @include sm() {
+                    justify-content: center;
+                }
+                @include md() {
+                    margin-top: 20px;
+                    justify-content: center;
+                    height: unset;
+                }
+
+                span {
+                    border: $border;
+                    color: $white;
+                    font-family: "Poppins-ExtraLight";
+                    text-transform: capitalize;
+                    font-size: 14px;
+                    line-height: 14px;
+                    // word-spacing: 5px;
+                    letter-spacing: 3px;
+                    @include xs() {
+                        font-size: 13px;
+                        letter-spacing: 0px;
+                    }
+                    a {
+                        color: $orange;
+                        transition-duration: 0.4s;
+                        text-transform: lowercase;
+                        font-weight: 600;
+
+                        &:hover {
+                            color: $new_color;
+                        }
+                    }
+                }
+            }
+
+            // footer_area_bottom_right
+            .footer_area_bottom_right {
+                border: $border;
+                text-align: end;
+                align-items: center;
+                display: flex;
+                height: 100%;
+                justify-content: end;
+                @include xs() {
+                    justify-content: center;
+                    padding-bottom: 20px;
+                }
+                @include sm() {
+                    justify-content: center;
+                    padding-bottom: 20px;
+                }
+                ul {
+                    border: $border;
+
+                    @include md() {
+                        margin: auto;
+                    }
+
+                    li {
+                        display: flex;
+                        justify-content: end;
+
+                        a {
+                            border: $border;
+                            color: $white;
+                            font-family: "Poppins-ExtraLight";
+                            text-transform: capitalize;
+                            font-size: 14px;
+                            line-height: 14px;
+                            letter-spacing: 3px;
+                            margin-left: 20px;
+                            position: relative;
+                            transition-duration: 0.4s;
+
+                            &:hover {
+                                color: $new_color;
+                            }
+
+                            &::before {
+                                content: "";
+                                border-left: 1px solid $orange;
+                                width: 1px;
+                                height: 18px;
+                                top: -2px;
+                                left: -12px;
+                                position: absolute;
+                            }
+
+                            // &:first-child{
+                            //     border-left: 0px;
+                            // }
+                        }
+
+                        .faq {
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+// footer_area end

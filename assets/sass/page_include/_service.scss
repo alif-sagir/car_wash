@@ -1,0 +1,217 @@
+// services_area start
+.servicess_area {
+    border: $border;
+    background-color: $black;
+    background-image: url("../images/servicr_area_img/service_bg_1.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+
+    // padding: 100px 0px;
+    .servicess_area_cover {
+        background-color: rgba(0, 0, 0, 0.7);
+        padding: 95px 0px;
+
+        .services_area_content {
+            border: $border;
+        }
+    }
+}
+
+// title_and_description_area start
+.title_and_description_area {
+    border: $border;
+
+    .services_area_title {
+        text-align: center;
+
+        h2 {
+            border: $border;
+            color: $orange;
+            font-family: "Poppins-ExtraLight";
+            text-transform: capitalize;
+            font-size: 40px;
+            line-height: 40px;
+            word-spacing: 5px;
+            letter-spacing: 6px;
+            margin-bottom: 20px;
+
+            @include xs() {
+                font-size: 20px;
+                line-height: 20px;
+                font-weight: bold;
+            }
+
+            @include sm() {
+                font-size: 30px;
+                line-height: 30px;
+                font-weight: bold;
+            }
+
+            @include md() {
+                font-size: 35px;
+                line-height: 35px;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .services_area_title_description {
+        border: $border;
+        text-align: center;
+        margin-bottom: 90px;
+
+        p {
+            color: $white;
+            font-family: "Poppins-ExtraLight";
+            font-size: 18px;
+            word-spacing: 2px;
+            letter-spacing: 4px;
+            text-transform: capitalize;
+
+            @include xs() {
+                font-size: 16px;
+                word-spacing: 0px;
+                letter-spacing: 1px;
+            }
+
+            @include sm() {
+                letter-spacing: 3px;
+            }
+
+            span {
+                color: $orange;
+            }
+        }
+    }
+}
+
+// title_and_description_area end
+// services_card_area start
+.services_card_area {
+    border: $border;
+
+    .services_card {
+        border: $border;
+        // border: 1px solid white;
+        // background-image: url("../images/servicr_area_img/service_bg_2.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position-x: center;
+        background-position-y: center;
+        width: 285px;
+        // padding: 70px 0px;
+        margin: auto;
+
+        @include xs() {
+            margin-bottom: 50px;
+        }
+
+        @include md() {
+            margin-top: 70px;
+        }
+
+        .services_card_cover {
+            padding: 70px 0px;
+            // background-color: rgb(44 44 44 / 62%);
+            background-color: rgb(60 60 60 / 62%);
+            box-shadow: 0px 3px 0px $new_color;
+
+            @include xs() {
+                margin: 0px 26px;
+                padding: 40px 0px;
+            }
+
+            @include sm() {
+                margin-bottom: 60px;
+            }
+
+            .card_title {
+                border: $border;
+                text-align: center;
+
+                h3 {
+                    color: $white;
+                    font-family: "Poppins-ExtraLight";
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    letter-spacing: 6px;
+                    word-spacing: -3px;
+
+                    span {
+                        font-weight: bold;
+                        color: $orange;
+                    }
+                }
+            }
+
+            .service_price {
+                border: $border;
+                text-align: center;
+                margin: 35px 0px;
+
+                h2 {
+                    border: $border;
+                    color: $new_color;
+                    font-family: "Poppins-ExtraLight";
+                    text-transform: capitalize;
+                    font-size: 40px;
+                    letter-spacing: 6px;
+                    font-weight: bold;
+                }
+
+                h3 {
+                    border: $border;
+                    color: $orange;
+                    font-family: "Poppins-ExtraLight";
+                    font-size: 20px;
+                    letter-spacing: 6px;
+                    text-transform: uppercase;
+                }
+            }
+
+            .package_title {
+                border: $border;
+                text-align: center;
+
+                p {
+                    color: $white;
+                    font-family: "Poppins-ExtraLight";
+                    text-transform: capitalize;
+                    font-size: 15px;
+                    letter-spacing: 3px;
+                    word-spacing: 5px;
+
+                    span {
+                        font-weight: bold;
+                        color: $orange;
+                    }
+                }
+            }
+
+            .service_days_title {
+                border: $border;
+                text-align: center;
+                margin-top: 10px;
+
+                p {
+                    color: $white;
+                    font-family: "Poppins-ExtraLight";
+                    text-transform: capitalize;
+                    font-size: 15px;
+                    letter-spacing: 3px;
+                    word-spacing: -2px;
+
+                    span {
+                        font-weight: bold;
+                        color: $orange;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// services_area end

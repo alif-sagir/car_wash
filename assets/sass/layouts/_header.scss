@@ -1,0 +1,167 @@
+.nav_area_full {
+    border: $border;
+    background-color: black;
+    border-bottom: 1px solid $border_color;
+    padding: 15px 0px;
+    position: sticky;
+    top: 0px;
+
+    .nav_area_content {
+        border: $border;
+        // logo_area start
+        .logo_area {
+            border: $border;
+            overflow: hidden;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            width: 50px;
+            height: 100%;
+            align-items: center;
+            display: flex;
+
+            // display: block;
+
+            img {
+                width: 100%;
+            }
+            .logo_title_and_sub_title {
+                display: none;
+                border: $border;
+                text-align: center;
+                line-height: 16px;
+                p {
+                    border: $border;
+                    color: $white;
+                    font-family: $Poppins_SemiBold;
+                    font-family: $Poppins_Medium;
+                    font-size: 13px;
+                    line-height: 13px;
+                    color: $orange;
+                }
+                span {
+                    border: $border;
+                    color: $white;
+                    font-family: $Poppins_ExtraLight;
+                    font-size: 10px;
+                    line-height: 10px;
+                    color: $new_color;
+                }
+            }
+        }
+
+        // menu_area start
+        .menu_area {
+            border: $border;
+            align-items: center;
+            display: flex;
+            height: 100%;
+            justify-content: end;
+
+            ul {
+                display: flex;
+                justify-content: end;
+
+                @include xs {
+                    display: none;
+                }
+
+                @include sm {
+                    display: none;
+                }
+
+                @include md {
+                    display: none;
+                }
+
+                // display: none;
+                li {
+                    a {
+                        border: $border;
+                        text-transform: capitalize;
+                        font-size: 16px;
+                        font-family: $Poppins_Light;
+                        letter-spacing: 4px;
+                        line-height: 16px;
+                        align-items: center;
+                        display: flex;
+                        height: 100%;
+                        color: $white;
+                        padding: 15px 0px;
+                        margin-left: 45px;
+                        transition-duration: 0.4s;
+                        position: relative;
+                        padding-left: 15px;
+
+                        &:hover,
+                        &.active_button {
+                            color: $orange;
+                            transition-duration: 0.4s;
+                            padding-right: 10px;
+                            margin-left: 35px;
+                        }
+                    }
+                }
+            }
+            // .active_class{
+            //     display: block;
+            // }
+            // responsive_menu start
+            .responsive_menu {
+                border: $border;
+                position: relative;
+                display: none;
+
+                @include xs {
+                    display: block;
+                }
+
+                @include sm {
+                    display: block;
+                }
+
+                @include md {
+                    display: block;
+                }
+
+                a {
+                    padding: 7px;
+
+                    i {
+                        border: $border;
+                        color: $white;
+                        font-size: 30px;
+                    }
+                }
+            }
+
+            .responsive_nav_bar {
+                // display: block;
+                display: none;
+                position: absolute;
+                top: 68px;
+                background-color: #363636;
+                width: 248px;
+                height: 600px;
+                right: 0px;
+                @include xs {
+                    display: block;
+                }
+
+                @include sm {
+                    display: block;
+                }
+
+                @include md {
+                    display: block;
+                }
+                li {
+                    a {
+                    }
+                }
+            }
+
+            // responsive_menu end
+        }
+    }
+}

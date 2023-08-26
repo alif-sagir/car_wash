@@ -1,0 +1,474 @@
+// contact_us_area start
+.contact_us_area_full {
+    border: $border;
+    background-color: $black;
+    padding: 95px 0px;
+
+    .contact_us_content {
+        border: $border;
+    }
+}
+
+// contact_us_title start
+.contact_us_title {
+    border: $border;
+    margin-bottom: 45px;
+
+    h2 {
+        border: $border;
+        color: #ff8934;
+        font-family: "Poppins-ExtraLight";
+        text-transform: capitalize;
+        font-size: 40px;
+        line-height: 40px;
+        word-spacing: 5px;
+        letter-spacing: 6px;
+
+        @include xs() {
+            font-size: 20px;
+            line-height: 20px;
+            font-weight: bold;
+        }
+
+        @include sm() {
+            font-size: 30px;
+            line-height: 30px;
+            font-weight: bold;
+        }
+
+        @include md() {
+            font-size: 35px;
+            line-height: 35px;
+            font-weight: bold;
+        }
+    }
+}
+
+// contact_us_title end
+// contact_and_form_area start
+.contact_and_form_area {
+    border: $border;
+}
+
+// contact_area start
+.contact_area {
+    border: $border;
+    @include sm() {
+        margin-bottom: 80px;
+    }
+    @include xs() {
+        margin-bottom: 80px;
+    }
+
+    .operating_time_title {
+        margin-bottom: 45px;
+
+        p {
+            border: $border;
+            color: $off_white;
+            font-family: "Poppins-ExtraLight";
+            text-transform: capitalize;
+            font-size: 18px;
+            line-height: 18px;
+            word-spacing: 5px;
+            letter-spacing: 3px;
+        }
+    }
+
+    .location_title {
+        margin-bottom: 45px;
+
+        p {
+            border: $border;
+            color: $off_white;
+            font-family: "Poppins-ExtraLight";
+            text-transform: capitalize;
+            font-size: 18px;
+            line-height: 18px;
+            word-spacing: 5px;
+            letter-spacing: 3px;
+        }
+    }
+
+    // contact_number area
+    .contact_number {
+        border: $border;
+        margin-bottom: 45px;
+
+        // contact_number_area_title
+        .contact_number_area_title {
+            border: $border;
+            display: flex;
+            align-items: center;
+            margin-bottom: 12px;
+
+            .logo {
+                margin-right: 20px;
+                align-items: center;
+                display: flex;
+
+                i {
+                    border: $border;
+                    color: $orange;
+                    font-size: 17px;
+                    line-height: 17px;
+                }
+            }
+
+            .contact_number_title {
+                display: flex;
+                align-items: center;
+
+                h2 {
+                    border: $border;
+                    color: $white;
+                    font-family: "Poppins-ExtraLight";
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    word-spacing: 5px;
+                    letter-spacing: 3px;
+                    font-size: 20px;
+
+                    @include xs() {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .phone_number {
+            display: inline-grid;
+            margin-left: 37px;
+
+            a {
+                border: $border;
+                color: $off_white;
+                font-family: "Poppins-ExtraLight";
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 3px;
+                transition-duration: 0.4s;
+
+                &:hover {
+                    color: $new_color;
+                }
+            }
+
+            .numner_1 {
+                margin-bottom: 10px;
+            }
+
+            .numner_2 {
+            }
+        }
+    }
+
+    // email_area
+    .email_area {
+        border: $border;
+        margin-bottom: 45px;
+
+        .email_area_title {
+            border: $border;
+            display: flex;
+
+            .logo {
+                align-items: center;
+                display: flex;
+
+                i {
+                    border: $border;
+                    color: $orange;
+                    font-size: 17px;
+                    line-height: 17px;
+                    margin-right: 20px;
+                }
+            }
+
+            .email_title {
+                align-items: center;
+                display: flex;
+                margin-bottom: 12px;
+
+                h2 {
+                    border: $border;
+                    color: white;
+                    font-family: "Poppins-ExtraLight";
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    // word-spacing: 5px;
+                    letter-spacing: 3px;
+
+                    @include xs() {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .contact_email {
+            margin-left: 37px;
+
+            a {
+                border: $border;
+                color: $off_white;
+                font-family: "Poppins-ExtraLight";
+                text-transform: lowercase;
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 3px;
+                transition-duration: 0.4s;
+
+                &:hover {
+                    color: $new_color;
+                }
+
+                @include xs() {
+                    letter-spacing: 0px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+
+    // web_area
+    .web_adderss_area {
+        border: $border;
+
+        .web_area_title {
+            border: $border;
+            display: flex;
+            align-items: center;
+
+            .logo {
+                align-items: center;
+                display: flex;
+                margin-right: 20px;
+
+                i {
+                    border: $border;
+                    color: $orange;
+                    font-size: 17px;
+                    line-height: 17px;
+                }
+            }
+
+            .web_title {
+                align-items: center;
+                display: flex;
+                margin-bottom: 12px;
+
+                h2 {
+                    border: $border;
+                    color: white;
+                    font-family: "Poppins-ExtraLight";
+                    text-transform: capitalize;
+                    font-size: 20px;
+                    font-weight: 600;
+                    line-height: 20px;
+                    letter-spacing: 3px;
+
+                    @include xs() {
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+
+        .web_link {
+            margin-left: 37px;
+
+            a {
+                border: $border;
+                color: $off_white;
+                font-family: "Poppins-ExtraLight";
+                text-transform: lowercase;
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 3px;
+                transition-duration: 0.4s;
+
+                &:hover {
+                    color: $new_color;
+                }
+
+                @include xs() {
+                    letter-spacing: 1px;
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+
+// contact_area end
+
+// form_area start
+
+.form_area {
+    border: $border;
+
+    @include md() {
+        margin-top: 70px;
+    }
+
+    .form_all_content {
+        border: $border;
+
+        // user_full_name
+        .user_full_name {
+            justify-content: space-between;
+            display: flex;
+            margin-bottom: 35px;
+
+            @include xs() {
+                display: block;
+            }
+
+            .first_name {
+                border: $border;
+                display: inline-grid;
+
+                @include xs() {
+                    margin-bottom: 35px;
+                    width: 100%;
+                }
+
+                label {
+                    border: $border;
+                    color: $white;
+                }
+
+                input {
+                    border: $border;
+                    // color: $border_color;
+                    background-color: transparent;
+                    border-bottom: 1px solid $orange;
+                }
+            }
+
+            .last_name {
+                border: $border;
+                display: inline-grid;
+
+                @include xs() {
+                    width: 100%;
+                }
+
+                label {
+                    border: $border;
+                    color: white;
+                }
+
+                input {
+                    border: $border;
+                    // color: $border_color;
+                    background-color: transparent;
+                    border-bottom: 1px solid $orange;
+                }
+            }
+        }
+
+        // user_email
+        .user_email {
+            border: $border;
+            display: grid;
+            margin-bottom: 35px;
+
+            label {
+                border: $border;
+                color: white;
+            }
+
+            input {
+                border: $border;
+                // color: $border_color;
+                background-color: transparent;
+                border-bottom: 1px solid $orange;
+            }
+        }
+
+        // message_area
+        .user_message_area {
+            border: $border;
+            display: grid;
+            margin-bottom: 35px;
+
+            label {
+                border: $border;
+                color: white;
+            }
+
+            textarea {
+                border: $border;
+                color: $off_white;
+                background-color: transparent;
+                border-bottom: 1px solid $orange;
+                font-family: "Poppins-ExtraLight";
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 3px;
+                outline: 0;
+                padding-bottom: 7px;
+            }
+        }
+
+        // submit_area
+        .submit_area {
+            border: $border;
+
+            input {
+                border: $border;
+                color: black;
+                font-weight: 600;
+                width: 100%;
+                background: $orange;
+                border: 1px solid $orange;
+                padding: 10px 0px;
+                transition-duration: 0.6s;
+
+                &:hover {
+                    background-color: transparent;
+                    color: $new_color;
+                    border-color: $new_color;
+                }
+            }
+        }
+
+        // some include item value start
+        .label_all {
+            font-family: "Poppins-ExtraLight";
+            text-transform: capitalize;
+            font-size: 18px;
+            line-height: 18px;
+            word-spacing: 5px;
+            letter-spacing: 3px;
+            font-weight: 600;
+            margin-bottom: 25px;
+
+            // color: $orange;
+            @include xs() {
+                font-size: 16px;
+            }
+        }
+
+        .input_all {
+            font-family: "Poppins-ExtraLight";
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 3px;
+            outline: 0;
+            color: $off_white;
+            padding-bottom: 7px;
+            // border-bottom: 1px solid $border_color;
+        }
+
+        // some include item value end
+    }
+}
+
+// form_area end
